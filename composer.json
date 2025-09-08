@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "stevecreekmore/laravel-disk-monitor",
+    "description": "This is my package laravel-disk-monitor",
     "keywords": [
-        ":vendor_name",
+        "stevecreekmore",
         "laravel",
-        ":package_slug"
+        "laravel-disk-monitor"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/stevecreekmore/laravel-disk-monitor",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Steven Creekmore",
+            "email": "creekmore108@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "stevecreekmore\\LaravelDiskMonitor\\": "src/",
+            "stevecreekmore\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "stevecreekmore\\LaravelDiskMonitor\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "stevecreekmore\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelDiskMonitor": "stevecreekmore\\LaravelDiskMonitor\\Facades\\LaravelDiskMonitor"
             }
         }
     },
