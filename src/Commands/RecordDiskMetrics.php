@@ -16,5 +16,6 @@ class RecordDiskMetrics extends Command
 
         return self::SUCCESS;
     }
+
     public function RecordDiskMetrics() {}
 }

@@ -4,10 +4,6 @@ namespace stevecreekmore\DiskMonitor;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use stevecreekmore\DiskMonitor\Commands\RecordDiskMetricsCommand;
-use stevecreekmore\DiskMonitor\Commands\DiskMetricsController;
-use Illuminate\Support\Facades\Route;
-
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {

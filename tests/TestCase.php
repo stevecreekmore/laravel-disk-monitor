@@ -2,8 +2,8 @@
 
 namespace stevecreekmore\DiskMonitor\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Orchestra\Testbench\TestCase as Orchestra;
 use stevecreekmore\DiskMonitor\DiskMonitorServiceProvider;
 
 class TestCase extends Orchestra
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn(string $modelName) => 'stevecreekmore\\DiskMonitor\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'stevecreekmore\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
@@ -33,7 +33,7 @@ class TestCase extends Orchestra
             'prefix' => '',
         ]);
 
-        include_once __DIR__ . '/../database/migrations/create_disk_monitor_tables.php.stub';
+        include_once __DIR__.'/../database/migrations/create_disk_monitor_tables.php.stub';
         // (new CreateDiskMonitorTables())->up();
         // config()->set('database.default', 'testing');
 
