@@ -1,5 +1,5 @@
 <?php
 
-use stevecreekmore\LaravelDiskMonitor\Tests\TestCase;
+use stevecreekmore\DiskMonitor\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

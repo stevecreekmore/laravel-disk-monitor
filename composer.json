@@ -1,6 +1,6 @@
 {
     "name": "stevecreekmore/laravel-disk-monitor",
-    "description": "This is my package laravel-disk-monitor",
+    "description": "This is my package to monitor disk usage in Laravel applications.",
     "keywords": [
         "stevecreekmore",
         "laravel",
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "stevecreekmore\\LaravelDiskMonitor\\": "src/",
-            "stevecreekmore\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories/"
+            "stevecreekmore\\DiskMonitor\\": "src/",
+            "stevecreekmore\\DiskMonitor\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "stevecreekmore\\LaravelDiskMonitor\\Tests\\": "tests/",
+            "stevecreekmore\\DiskMonitor\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,11 +63,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "stevecreekmore\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
-            ],
-            "aliases": {
-                "LaravelDiskMonitor": "stevecreekmore\\LaravelDiskMonitor\\Facades\\LaravelDiskMonitor"
-            }
+                "stevecreekmore\\DiskMonitor\\DiskMonitorServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

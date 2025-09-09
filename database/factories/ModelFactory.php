@@ -1,6 +1,6 @@
 <?php
 
-namespace stevecreekmore\LaravelDiskMonitor\Database\Factories;
+namespace stevecreekmore\DiskMonitor\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

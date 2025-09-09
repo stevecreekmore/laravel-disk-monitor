@@ -5,12 +5,12 @@ namespace stevecreekmore\LaravelDiskMonitor\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \stevecreekmore\LaravelDiskMonitor\LaravelDiskMonitor
+ * @see \stevecreekmore\LaravelDiskMonitor\DiskMonitor
  */
-class LaravelDiskMonitor extends Facade
+class DiskMonitor extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \stevecreekmore\LaravelDiskMonitor\LaravelDiskMonitor::class;
+        return \stevecreekmore\LaravelDiskMonitor\DiskMonitor::class;
     }
 }
